@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preload 1.2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(8, 17, 24, 1.00);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1{
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .box2{
+            width: 100px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .border{
+            width: 130px;
+            height: 130px;
+            /*border: white 2px solid;*/
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle-gray{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(210, 219, 242, 1.00);
+            border-radius: 50%;
+            animation: hide1 2s linear infinite;
+        }
+
+        .circle-mint{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(133, 200, 213, 1.00);
+            border-radius: 50%;
+            animation: hide2 2s linear infinite;
+        }
+
+        .circle-blue{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(42, 142, 156, 1.00);
+            border-radius: 50%;
+            animation: hide3 2s linear infinite;
+        }
+
+        .circle-darkgreen{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(25, 66, 72, 1.00);
+            border-radius: 50%;
+            animation: hide4 2s linear infinite;
+        }
+        
+        @keyframes hide1 {
+            0% {
+                background-color: rgba(210, 219, 242, 1.00);
+            }
+            20% {
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            40% {
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            60%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            80%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            100% {
+                background-color: rgba(210, 219, 242, 1.00);
+            }
+        }
+
+        @keyframes hide2 {
+            0% {
+                background-color: rgba(133, 200, 213, 1.00);
+            }
+            20% {
+                background-color: rgba(133, 200, 213, 1.00);
+            }
+            40% {
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            60%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            80%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            100% {
+                background-color: rgba(133, 200, 213, 1.00);
+            }
+        }
+
+        @keyframes hide3 {
+            0%{
+                background-color: rgba(42, 142, 156, 1.00);
+            }
+            20%{
+                background-color: rgba(42, 142, 156, 1.00);
+            }
+            40%{
+                background-color: rgba(42, 142, 156, 1.00);
+            }
+            60%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            80%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            100%{
+                background-color: rgba(42, 142, 156, 1.00);
+            }
+
+        }
+
+        @keyframes hide4 {
+            0%{
+                background-color: rgba(25, 66, 72, 1.00);
+            }
+            20%{
+                background-color: rgba(25, 66, 72, 1.00);
+            }
+            40%{
+                background-color: rgba(25, 66, 72, 1.00);
+            }
+            60%{
+                background-color: rgba(25, 66, 72, 1.00);
+            }
+            80%{
+                background-color: rgba(8, 17, 24, 1.00);
+            }
+            100%{
+                background-color: rgba(25, 66, 72, 1.00);
+            }
+
+        }
+        p{
+            font-size: 1.5em;
+            margin-top: 5px;
+            color: white;
+            font-family: "Orbitron", serif;
+            letter-spacing: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="border">
+            <div class="box1">
+                <div class="circle-gray"></div>
+                <div class="circle-mint"></div>
+            </div>
+            <div class="box2">
+                <div class="circle-darkgreen"></div>
+                <div class="circle-blue"></div>
+            </div>
+        </div>
+        <p>Load...</p>
+    </main>
+</body>
+</html>

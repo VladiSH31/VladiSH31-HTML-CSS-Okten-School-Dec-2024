@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Preload 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            /*box-sizing: border-box;*/
+        }
+
+        .gradient {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(
+                    45deg,
+                    hsl(240deg 100% 20%) 0%,
+                    hsl(281deg 100% 21%) 8%,
+                    hsl(304deg 100% 23%) 17%,
+                    hsl(319deg 100% 30%) 25%,
+                    hsl(329deg 100% 36%) 33%,
+                    hsl(336deg 100% 41%) 42%,
+                    hsl(346deg 83% 51%) 50%,
+                    hsl(3deg 95% 61%) 58%,
+                    hsl(17deg 100% 59%) 67%,
+                    hsl(30deg 100% 55%) 75%,
+                    hsl(40deg 100% 50%) 83%,
+                    hsl(48deg 100% 50%) 92%,
+                    hsl(55deg 100% 50%) 100%
+            );
+        }
+
+        .border{
+            width: 200px;
+            height: 40px;
+            border: white solid 2px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .load{
+            width: 20px;
+            height: 30px;
+            background-color: white;
+            box-sizing: border-box;
+            /*padding-left: 4px;*/
+            padding:4px 10px;
+            /*border-radius: 10px;*/
+            animation: load 5s linear infinite alternate;
+        }
+        
+        @keyframes load {
+            0%{
+                transform: scaleX(9);
+            }
+
+            100%{
+
+            }
+
+        }
+
+        p{
+            font-size: 1.5em;
+            margin-top: 5px;
+            color: white;
+            font-family: "Orbitron", serif;
+            letter-spacing: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="gradient">
+        <div class="border">
+            <div class="load"></div>
+        </div>
+        <p>Loading</p>
+    </main>
+</body>
+</html>

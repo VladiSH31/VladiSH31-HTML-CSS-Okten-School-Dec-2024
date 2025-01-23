@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.w-1070{
+    width: 1070px;
+    margin: 0 auto;
+}
+
+/*-------------------- header --------------------*/
+
+header{
+    width: 100%;
+    /*background-color: gray;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-family: "DM Sans", serif;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav a{
+    color: #696871;
+    font-family: "DM Sans", serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.469px;
+}
+
+header button{
+    width: 211px;
+    height: 60px;
+    border-radius: 10px;
+    background: #FF7143;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+    transition: 1s;
+}
+
+header button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.active-link{
+    color: #19191B;
+    font-family: "DM Sans", serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.469px;
+    border-bottom: 2px solid #5454D4;
+}
+
+/*------------------- main -------------------*/
+
+/*------------------- block-info-1 -------------------*/
+
+.block-info-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 68px;
+}
+
+.block-info-1-content h1{
+    width: 439px;
+    color: #19191B;
+    font-family: "DM Sans", serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 77px; /* 102.667% */
+    letter-spacing: -2.501px;
+}
+
+.block-info-1-content p{
+    width: 409px;
+    color: #696871;
+    font-family: "Mulish", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+    margin-top: 30px;
+}
+
+.block-info-1-content button{
+    width: 188px;
+    height: 60px;
+    border-radius: 10px;
+    background: #5454D4;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "DM Sans", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+    margin-top: 50px;
+    transition: 1s;
+}
+
+.block-info-1-content button:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/*------------------- brands -------------------*/
+
+.brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 140px;
+}
+
+/*------------------- block-info-2 -------------------*/
+
+.block-info-2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+}
+
+.block-info-2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.block-info-2-content h1{
+    width: 556px;
+    color: #19191B;
+    font-family: "DM Sans", serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px; /* 114% */
+    letter-spacing: -1.563px;
+}
+
+.block-info-2-content p{
+    width: 459px;
+    color: #696871;
+    font-family: "Mulish", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+
+}
+
+.block-info-2-content a{
+    color: #5454D4;
+    font-family: "DM Sans", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+}
+
+/*------------------- block-info-3 -------------------*/
+
+.block-info-3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 83px;
+}
+
+.block-info-3-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.block-info-3-content h1{
+    width: 556px;
+    color: #19191B;
+    font-family: "DM Sans", serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px; /* 114% */
+    letter-spacing: -1.563px;
+}
+
+.block-info-3-content p{
+    width: 459px;
+    color: #696871;
+    font-family: "Mulish", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+
+}
+
+.block-info-3-content a{
+    color: #5454D4;
+    font-family: "DM Sans", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+}
+
+/*------------------ info-cards ------------------*/
+
+.info-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-cards .info-card h2{
+    color: #19191B;
+    text-align: center;
+    font-family: "DM Sans", serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px; /* 150% */
+    letter-spacing: -0.75px;
+}
+
+.info-cards .info-card p{
+    width: 307px;
+    color: #696871;
+    text-align: center;
+    font-family: "Mulish", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.5px;
+}
+
+/*---------------------- subscribe-plan ----------------------*/
+
+.subscribe-plan{
+    margin-top: 150px;
+}
+
+.subscribe-plan h1{
+    width: 523px;
+    color: #19191B;
+    font-family: "DM Sans", serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px; /* 116.667% */
+    letter-spacing: -1.876px;
+}

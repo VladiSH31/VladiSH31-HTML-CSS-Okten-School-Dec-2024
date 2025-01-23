@@ -1,0 +1,19 @@
+@media  screen and (max-width: 480px){
+
+    .wrapper{
+        width: 375px;
+        height: 2194px;
+        margin: 32px 16px;
+    }
+
+    .row{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    img{
+        width: 343px;
+        height: auto;
+    }
+
+}

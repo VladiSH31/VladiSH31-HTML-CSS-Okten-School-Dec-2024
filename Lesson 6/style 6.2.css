@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.log{
+    width: 400px;
+    height: 500px;
+    /*background-color: cornflowerblue;*/
+    border: 2px solid rgba(158, 157, 153, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reg{
+    width: 400px;
+    height: 100px;
+    /*background-color: lightgreen;*/
+    margin-top: 10px;
+    border: 2px solid rgba(158, 157, 153, 0.7);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Roboto Mono", serif;
+    font-size: 13px;
+}
+
+img{
+    width: 150px;
+    height: 60px;
+    background-size: cover;
+}
+
+.login {
+    width: 300px;
+    height: 50px;
+    margin-top: 40px;
+    border: 1px solid rgba(158, 157, 153, 0.7);
+    background-color: rgba(158, 157, 153, 0.1);
+    font-family: "Roboto Mono", serif;
+}
+
+.pass {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid rgba(158, 157, 153, 0.7);
+    background-color: rgba(158, 157, 153, 0.1);
+    font-family: "Roboto Mono", serif;
+}
+
+input[type="text"]::placeholder{
+    font-size: 15px;
+    padding-left: 5px;
+
+}
+
+input[type="submit"]{
+    width: 300px;
+    height: 45px;
+    background-color: rgba(104,181,250,255);
+    margin-top: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Roboto Mono", serif;
+}
+
+.grey{
+    color: rgba(115,115,115,255);
+    margin-top: 20px;
+    font-family: "Roboto Mono", serif;
+}
+
+h4{
+    font-family: "Roboto Mono", serif;
+    margin-top: 40px;
+
+}
+
+.log h4 a{
+    color: rgba(58,85,159,255);
+}
+
+.log h4:before{
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url("img/face.png");
+    background-size: cover;
+    margin-bottom: -2px;
+    margin-right: 3px;
+}
+.log a{
+    margin-top: 20px;
+    color: rgba(58,85,159,255);
+    font-family: "Roboto Mono", serif;
+}
+
+.reg a{
+    color: rgba(40,162,247,255);
+
+}

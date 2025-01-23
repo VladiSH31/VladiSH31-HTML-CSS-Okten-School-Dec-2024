@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px){
+    .wrapper{
+        width: 375px;
+        height: 1040px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 32px 16px;
+        gap: 32px;
+    }
+
+    .row{
+        height: 520px;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .card{
+        width: 343px;
+        height: 220px;
+    }
+
+    img{
+        width: 128px;
+        height: 128px;
+    }
+
+
+}
