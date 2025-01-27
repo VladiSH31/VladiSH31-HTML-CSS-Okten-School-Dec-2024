@@ -181,7 +181,8 @@ main .section-about-blog .text-block form button{
 
 .section-category{
     height: 500px;
-    background: #EFF0F3;
+    /*background: #EFF0F3;*/
+
 }
 
 .section-category .title-category {
@@ -240,6 +241,91 @@ main .section-about-blog .text-block form button{
     height: 280px;
     border-radius: 8px;
     background: var(--White, #FFFFFE);
+}
+
+.section-category .category .card .item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+
+.section-category .category .card .item img{
+    width: 60px;
+    height: 60px;
+}
+
+.section-category .category .card .item p{
+    color: var(--Black, #2B2C34);
+
+    /* 24 px - Sub heading 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dot-category {
+    width: 1120px;
+    height: 100px;
+    /*background-color: #3C3C43;*/
+    display: flex;
+    gap: 155px;
+    position: relative;
+    left: 184px;
+    bottom: 44px;
+    z-index: -1;
+}
+
+.section-article{
+    background-color: #80D2C4;
+}
+
+.section-article .title-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-article .title-article h3{
+    color: var(--Black, #2B2C34);
+
+    /* 24 px - Sub heading 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.section-article .title-article a{
+    color: var(--Black, #2B2C34);
+    text-align: right;
+
+    /* 20 px - Sub Heading 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.section-article .title-article .see-all-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-article .title-article .see-all-block a svg{
+    position: relative;
+    bottom: -3px;
+    margin-left: 12px;
 }
 
 
