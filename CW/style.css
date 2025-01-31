@@ -387,8 +387,9 @@ main .section-about-blog .text-block form button{
     justify-content: space-between;
     border-radius: 12px;
     background: var(--White, #FFFFFE);
+}
 
-    /* For White Background */
+.section-article .article-cards .art-card:hover{
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
 }
 
