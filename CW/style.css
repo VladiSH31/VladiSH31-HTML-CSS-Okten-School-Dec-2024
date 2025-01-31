@@ -14,9 +14,9 @@ body{
     background: #EFF0F3;
 }
 
-.main-conteiner{
+.main-container{
     width: 100%;
-    height: 4792px;
+    /*height: 4792px;*/
     background: #EFF0F3;
 }
 
@@ -110,6 +110,8 @@ header .header-main nav ul .search{
 
 /*---------------------- main ----------------------*/
 
+/*---------------------- about-blog (hero) ----------------------*/
+
 .section-about-blog{
     display: flex;
     justify-content: space-between;
@@ -157,7 +159,19 @@ main .section-about-blog .text-block form input{
     color: var(--Grey, #C0C0C0);
 
     /* 20 px - Paragraph 1 */
-    font-family: "Plus Jakarta Sans";
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 25px;
+}
+
+input[type="email"]::placeholder{
+    color: var(--Grey, #C0C0C0);
+
+    /* 20 px - Paragraph 1 */
+    font-family: "Plus Jakarta Sans", serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -179,6 +193,8 @@ main .section-about-blog .text-block form button{
     line-height: normal;
     text-transform: capitalize;
 }
+
+/*--------------- Category -----------------*/
 
 .section-category{
     /*height: 500px;*/
@@ -241,6 +257,17 @@ main .section-about-blog .text-block form button{
     height: 280px;
     border-radius: 8px;
     background: var(--White, #FFFFFE);
+}
+
+.section-category .category .card:hover{
+    border-radius: 8px;
+    background: var(--Blue, #6246EA);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.section-category .category .card:hover .item p{
+    color: var(--White, #FFFFFE);
 }
 
 .section-category .category .card .item{
@@ -443,12 +470,211 @@ main .section-about-blog .text-block form button{
     margin-bottom: 80px;
 }
 
-/*---------------------------- Subscribe -----------------------*/
+/*---------------------------- Subscribe ------------------------------*/
 
+.section-subscribe{
+    width: 100%;
+    height: 453px;
+    background: #EFF0F3;
+    display: flex;
+    justify-content: center;
+}
 
+.section-subscribe .subscribe-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
+.section-subscribe .subscribe-container img{
+    width: 130px;
+    height: 130px;
+}
 
+.section-subscribe .subscribe-container .text-block{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+.section-subscribe .subscribe-container .text-block h3{
+    color: var(--Black, #2B2C34);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
 
+.section-subscribe .subscribe-container .text-block p{
+    color: var(--Grey, #C0C0C0);
+    text-align: center;
+
+    /* 20 px - Paragraph 1 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-subscribe .subscribe-container .subscribe-form{
+    width: 609px;
+    height: 67px;
+    display: flex;
+    gap: 20px;
+}
+
+.section-subscribe .subscribe-container .subscribe-form input{
+    width: 444px;
+    height: 67px;
+    border-radius: 8px;
+    background: var(--White, #FFFFFE);
+    border: none;
+
+    color: var(--Grey, #C0C0C0);
+
+    /* 20 px - Paragraph 1 */
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 25px;
+}
+
+.section-subscribe .subscribe-container .subscribe-form button{
+    width: 145px;
+    height: 67px;
+    border-radius: 8px;
+    background: var(--Blue, #6246EA);
+    color: var(--White, #FFFFFE);
+
+    /* 20 px - Sub Heading 2 */
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+/*------------------ footer ------------------------*/
+
+footer{
+    width: 100%;
+    height: 435px;
+    background: var(--Light-Grey-2, #E4E5E9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container{
+    height: 245px;
+    display: flex;
+    gap: 160px;
+    margin-top: 70px;
+}
+
+footer .footer-container .about-website {
+    width: 284px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-container .about-website .logo h2{
+    color: #001858;
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+footer .footer-container .about-website .logo h2 span{
+    width: 48px;
+    height: 27px;
+    color: var(--Blue, #6246EA);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer .footer-container .about-website p{
+    color: var(--Black, #2B2C34);
+
+    /* 18 px - Paragraph 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer .footer-container .about-website .social{
+    width: 190px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .footer-container .footer-link{
+    width: 805px;
+    height: 245px;
+    display: flex;
+    gap: 95px;
+}
+
+footer .footer-container .footer-link h3{
+    color: var(--Black, #2B2C34);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+footer .footer-container .footer-link p{
+    color: var(--Black, #2B2C34);
+
+    /* 18 px - Paragraph 2 */
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 1250px;
+    color: #C0C0C0;
+    margin-top: 50px;
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+footer .copyright p{
+    color: var(--Black, #2B2C34);
+    font-family: "Plus Jakarta Sans", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
